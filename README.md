@@ -15,7 +15,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 ### Links
 
 - [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-hEhPHxT6WQ)
-- [Live Site](https://plutuxx.github.io/interactive-rating-component-main.io/)
+- [Live Site](https://plutuxx.github.io/interactive-pricing-component.io/)
 
 ## Author
 
