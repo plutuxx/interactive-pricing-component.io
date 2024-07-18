@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
+  <main>
+    <div class="title-container">
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="trial-offer">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
+    <div class="pricing-container">
+      <div class="pricing-section">
+          <p class="pageview"><span id="pageview-amount" class="pageview-amount">100K</span>Pageviews</p>
+          <div class="price-box">
+            <p id="pricing-amount" class="pricing-amount">$16.00</p>
+            <p class="pricing-period"> / month</p>
+          </div>
+        <input type="range" id="range-input" class="range-input" min="0" max="100" value="50">
+        <div class="toggle-container">
+          <label id="monthly-option" for="billing-toggle">Monthly Billing</label>
+          <label class="switch">
+            <input type="checkbox" id="billing-toggle">
+            <span class="slider"></span>
+          </label>
+          <label id="yearly-option" class="yearly-billing" for="billing-toggle">Yearly Billing</label>
+        </div>
+      </div>
+      <div class="submit-container">
+        <div class="options-box">
+          <div class="option">
+            <img src="images/icon-check.svg" alt="#">
+            <p>Unlimited websites</p>
+          </div>
+          <div class="option">
+            <img src="images/icon-check.svg" alt="#">
+            <p>100% data ownership</p>
+          </div>
+          <div class="option">
+            <img src="images/icon-check.svg" alt="#">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <input class="submit-btn" type="submit" value="Start my trial">
+      </div>
+    </div>
+    </div>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
   </div>
 </body>
+<script src="script.js">
+</script>
+
 </html>
